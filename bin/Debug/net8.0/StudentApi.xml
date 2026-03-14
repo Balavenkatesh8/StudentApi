@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StudentApi</name>
+    </assembly>
+    <members>
+        <member name="T:StudentApi.Migrations.Init">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.FixStudentKey">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixStudentKey.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixStudentKey.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixStudentKey.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.AddStudentId">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddStudentId.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddStudentId.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddStudentId.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.AddCountriesTable">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddCountriesTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddCountriesTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddCountriesTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.AddCountryTable">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddCountryTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddCountryTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddCountryTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.FixAdminPrimaryKey">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixAdminPrimaryKey.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixAdminPrimaryKey.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixAdminPrimaryKey.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.AddRoles">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddRoles.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddRoles.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddRoles.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.AddUserAndRole">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddUserAndRole.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddUserAndRole.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddUserAndRole.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.CreateUserTable">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.CreateUserTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.CreateUserTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.CreateUserTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.AddBranchTable">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddBranchTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddBranchTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddBranchTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.UpdateUniversityNullable">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateUniversityNullable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateUniversityNullable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateUniversityNullable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.FixUniversityNullable">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixUniversityNullable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixUniversityNullable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixUniversityNullable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.FixBranchRelation">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixBranchRelation.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixBranchRelation.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.FixBranchRelation.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.UpdateBranchTable">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateBranchTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateBranchTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateBranchTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.UpdateStudentEducationColumns">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateStudentEducationColumns.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateStudentEducationColumns.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.UpdateStudentEducationColumns.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.CreateStudentEducationTable">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.CreateStudentEducationTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.CreateStudentEducationTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.CreateStudentEducationTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:StudentApi.Migrations.AddDocumentMasterlist">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddDocumentMasterlist.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddDocumentMasterlist.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddDocumentMasterlist.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

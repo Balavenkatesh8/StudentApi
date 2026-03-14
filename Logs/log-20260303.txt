@@ -1,0 +1,437 @@
+2026-03-03 12:23:03.541 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 12:23:06.289 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-03 12:23:06.296 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-03 12:23:06.866 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-03 12:23:06.868 +05:30 [INF] Hosting environment: Development
+2026-03-03 12:23:06.868 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-03 12:23:14.753 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 12:23:16.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 2140.934ms
+2026-03-03 12:23:16.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 12:23:16.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 12:23:16.863 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 36.3986ms
+2026-03-03 12:23:17.143 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 316.3811ms
+2026-03-03 12:23:17.276 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 12:23:17.451 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 175.5453ms
+2026-03-03 16:14:33.037 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 16:14:34.207 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-03 16:14:34.207 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-03 16:14:34.382 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-03 16:14:34.383 +05:30 [INF] Hosting environment: Development
+2026-03-03 16:14:34.383 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-03 16:14:36.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 16:14:37.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 1351.0585ms
+2026-03-03 16:14:38.046 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 16:14:38.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 16:14:38.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 32.4004ms
+2026-03-03 16:14:38.221 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 173.3483ms
+2026-03-03 16:14:38.350 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 16:14:38.471 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.5752ms
+2026-03-03 16:44:38.142 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 16:44:38.493 +05:30 [FTL] Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2026-03-03 16:44:38.582 +05:30 [ERR] Hosting failed to start
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-03-03 16:49:32.733 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 16:49:33.490 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-03 16:49:33.491 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-03 16:49:33.681 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-03 16:49:33.681 +05:30 [INF] Hosting environment: Development
+2026-03-03 16:49:33.681 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-03 16:49:35.188 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 16:49:35.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 695.3114ms
+2026-03-03 16:49:35.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 16:49:35.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 16:49:37.849 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 1908.6308ms
+2026-03-03 16:49:37.948 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2006.038ms
+2026-03-03 16:49:38.032 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 16:49:38.085 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.096ms
+2026-03-03 16:49:47.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Branch - null null
+2026-03-03 16:49:47.555 +05:30 [INF] Executing endpoint 'StudentApi.API.BranchController.GetAll (StudentApi)'
+2026-03-03 16:49:47.600 +05:30 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller StudentApi.API.BranchController (StudentApi).
+2026-03-03 16:49:48.794 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-03 16:49:50.100 +05:30 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Branch_Code], [b].[Branch_Id], [b].[Branch_Name], [b].[CreatedBy], [b].[Created_Date], [b].[Is_Active], [b].[LastModifiedAt], [b].[LastModifiedBy]
+FROM [Branch] AS [b]
+2026-03-03 16:49:50.241 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models.Branch, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 16:49:50.285 +05:30 [INF] Executed action StudentApi.API.BranchController.GetAll (StudentApi) in 2679.9551ms
+2026-03-03 16:49:50.286 +05:30 [INF] Executed endpoint 'StudentApi.API.BranchController.GetAll (StudentApi)'
+2026-03-03 16:49:50.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Branch - 200 null application/json; charset=utf-8 2897.206ms
+2026-03-03 16:50:10.899 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Address - null null
+2026-03-03 16:50:10.904 +05:30 [INF] Executing endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 16:50:10.915 +05:30 [INF] Route matched with {action = "GetAll", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller StudentApi.API.AddressController (StudentApi).
+2026-03-03 16:50:10.973 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Address_Id], [a].[Address_Type], [a].[City], [a].[Country], [a].[Created_At], [a].[Created_By], [a].[Is_Active], [a].[LastModified_At], [a].[LastModified_By], [a].[Postal_Code], [a].[State], [a].[Street]
+FROM [Addresses] AS [a]
+2026-03-03 16:50:11.013 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models.Address, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 16:50:11.020 +05:30 [INF] Executed action StudentApi.API.AddressController.GetAll (StudentApi) in 104.5627ms
+2026-03-03 16:50:11.020 +05:30 [INF] Executed endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 16:50:11.021 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Address - 200 null application/json; charset=utf-8 122.7ms
+2026-03-03 16:50:34.684 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Students - null null
+2026-03-03 16:50:34.688 +05:30 [INF] Executing endpoint 'StudentApi.API.StudentController.getAction (StudentApi)'
+2026-03-03 16:50:34.691 +05:30 [INF] Route matched with {action = "getAction", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAction() on controller StudentApi.API.StudentController (StudentApi).
+2026-03-03 16:50:34.798 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Created_At], [s].[Created_By], [s].[Email], [s].[First_Name], [s].[Gender], [s].[Has_Passport], [s].[Is_Active], [s].[Last_Modified_At], [s].[Last_Modified_By], [s].[Last_Name], [s].[Mobile_Number], [s].[Passport_Country], [s].[Passport_Expiry_Date], [s].[Passport_Number]
+FROM [Students] AS [s]
+2026-03-03 16:50:34.839 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Student, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 16:50:34.850 +05:30 [INF] Executed action StudentApi.API.StudentController.getAction (StudentApi) in 158.5536ms
+2026-03-03 16:50:34.850 +05:30 [INF] Executed endpoint 'StudentApi.API.StudentController.getAction (StudentApi)'
+2026-03-03 16:50:34.851 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Students - 200 null application/json; charset=utf-8 166.9912ms
+2026-03-03 16:53:03.925 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 16:53:04.657 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-03 16:53:04.658 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-03 16:53:04.834 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-03 16:53:04.835 +05:30 [INF] Hosting environment: Development
+2026-03-03 16:53:04.835 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-03 16:53:06.019 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 16:53:06.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 661.4699ms
+2026-03-03 16:53:06.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 16:53:06.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 16:53:06.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 33.1808ms
+2026-03-03 16:53:06.888 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.0764ms
+2026-03-03 16:53:07.031 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 16:53:07.131 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.7486ms
+2026-03-03 16:53:13.140 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Address - null null
+2026-03-03 16:53:13.276 +05:30 [INF] Executing endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 16:53:13.320 +05:30 [INF] Route matched with {action = "GetAll", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller StudentApi.API.AddressController (StudentApi).
+2026-03-03 16:53:14.509 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-03 16:53:15.691 +05:30 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Address_Id], [a].[Address_Type], [a].[City], [a].[Country], [a].[Created_At], [a].[Created_By], [a].[Is_Active], [a].[LastModified_At], [a].[LastModified_By], [a].[Postal_Code], [a].[State], [a].[Street]
+FROM [Addresses] AS [a]
+2026-03-03 16:53:15.870 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models.Address, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 16:53:15.914 +05:30 [INF] Executed action StudentApi.API.AddressController.GetAll (StudentApi) in 2586.5436ms
+2026-03-03 16:53:15.915 +05:30 [INF] Executed endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 16:53:15.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Address - 200 null application/json; charset=utf-8 2791.5535ms
+2026-03-03 16:53:42.213 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/Auth/login - application/json 49
+2026-03-03 16:53:42.226 +05:30 [INF] Executing endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 16:53:42.247 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StudentApi.DTO.LoginDto) on controller StudentApi.API.AuthController (StudentApi).
+2026-03-03 16:53:42.659 +05:30 [INF] Executed DbCommand (113ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RoleId], [u].[Username], [r].[Id], [r].[Role_Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Username] = @__model_Username_0
+2026-03-03 16:53:42.856 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-03 16:53:42.860 +05:30 [INF] Executed action StudentApi.API.AuthController.Login (StudentApi) in 613.5318ms
+2026-03-03 16:53:42.861 +05:30 [INF] Executed endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 16:53:42.861 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/Auth/login - 200 null application/json; charset=utf-8 647.5406ms
+2026-03-03 16:53:53.170 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Auth/admin-data - null null
+2026-03-03 16:53:53.185 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-03-03 16:53:53.192 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-03 16:53:53.192 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Auth/admin-data - 401 0 null 22.6073ms
+2026-03-03 16:54:21.701 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Auth/admin-data - null null
+2026-03-03 16:54:21.808 +05:30 [INF] Executing endpoint 'StudentApi.API.AuthController.AdminData (StudentApi)'
+2026-03-03 16:54:21.811 +05:30 [INF] Route matched with {action = "AdminData", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminData() on controller StudentApi.API.AuthController (StudentApi).
+2026-03-03 16:54:21.814 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-03 16:54:21.814 +05:30 [INF] Executed action StudentApi.API.AuthController.AdminData (StudentApi) in 2.8954ms
+2026-03-03 16:54:21.814 +05:30 [INF] Executed endpoint 'StudentApi.API.AuthController.AdminData (StudentApi)'
+2026-03-03 16:54:21.814 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Auth/admin-data - 200 null text/plain; charset=utf-8 114.8387ms
+2026-03-03 16:54:31.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Auth/student-data - null null
+2026-03-03 16:54:31.392 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Student)
+2026-03-03 16:54:31.394 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-03-03 16:54:31.395 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Auth/student-data - 403 0 null 10.2601ms
+2026-03-03 16:54:38.631 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Auth/admin-data - null null
+2026-03-03 16:54:38.632 +05:30 [INF] Executing endpoint 'StudentApi.API.AuthController.AdminData (StudentApi)'
+2026-03-03 16:54:38.632 +05:30 [INF] Route matched with {action = "AdminData", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminData() on controller StudentApi.API.AuthController (StudentApi).
+2026-03-03 16:54:38.633 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-03 16:54:38.633 +05:30 [INF] Executed action StudentApi.API.AuthController.AdminData (StudentApi) in 0.7647ms
+2026-03-03 16:54:38.633 +05:30 [INF] Executed endpoint 'StudentApi.API.AuthController.AdminData (StudentApi)'
+2026-03-03 16:54:38.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Auth/admin-data - 200 null text/plain; charset=utf-8 3.0905ms
+2026-03-03 16:57:40.415 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 16:57:41.079 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-03 16:57:41.080 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-03 16:57:41.258 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-03 16:57:41.259 +05:30 [INF] Hosting environment: Development
+2026-03-03 16:57:41.259 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-03 16:57:42.397 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 16:57:43.434 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 1058.5353ms
+2026-03-03 16:57:43.486 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 16:57:43.486 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 16:57:43.502 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 18.3218ms
+2026-03-03 16:57:43.687 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 200.7194ms
+2026-03-03 16:57:43.881 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 16:57:44.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 148.7613ms
+2026-03-03 16:57:49.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Address - null null
+2026-03-03 16:57:49.263 +05:30 [INF] Executing endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 16:57:49.307 +05:30 [INF] Route matched with {action = "GetAll", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller StudentApi.API.AddressController (StudentApi).
+2026-03-03 16:57:50.458 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-03 16:57:51.676 +05:30 [INF] Executed DbCommand (134ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Address_Id], [a].[Address_Type], [a].[City], [a].[Country], [a].[Created_At], [a].[Created_By], [a].[Is_Active], [a].[LastModified_At], [a].[LastModified_By], [a].[Postal_Code], [a].[State], [a].[Street]
+FROM [Addresses] AS [a]
+2026-03-03 16:57:51.816 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models.Address, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 16:57:51.855 +05:30 [INF] Executed action StudentApi.API.AddressController.GetAll (StudentApi) in 2542.2441ms
+2026-03-03 16:57:51.856 +05:30 [INF] Executed endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 16:57:51.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Address - 200 null application/json; charset=utf-8 2745.3759ms
+2026-03-03 16:58:06.486 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Students - null null
+2026-03-03 16:58:06.491 +05:30 [INF] Executing endpoint 'StudentApi.API.StudentController.getAction (StudentApi)'
+2026-03-03 16:58:06.497 +05:30 [INF] Route matched with {action = "getAction", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAction() on controller StudentApi.API.StudentController (StudentApi).
+2026-03-03 16:58:06.564 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Created_At], [s].[Created_By], [s].[Email], [s].[First_Name], [s].[Gender], [s].[Has_Passport], [s].[Is_Active], [s].[Last_Modified_At], [s].[Last_Modified_By], [s].[Last_Name], [s].[Mobile_Number], [s].[Passport_Country], [s].[Passport_Expiry_Date], [s].[Passport_Number]
+FROM [Students] AS [s]
+2026-03-03 16:58:06.620 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Student, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 16:58:06.630 +05:30 [INF] Executed action StudentApi.API.StudentController.getAction (StudentApi) in 133.11ms
+2026-03-03 16:58:06.630 +05:30 [INF] Executed endpoint 'StudentApi.API.StudentController.getAction (StudentApi)'
+2026-03-03 16:58:06.631 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Students - 200 null application/json; charset=utf-8 144.5486ms
+2026-03-03 17:07:20.928 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 17:07:21.576 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-03 17:07:21.577 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-03 17:07:21.755 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-03 17:07:21.755 +05:30 [INF] Hosting environment: Development
+2026-03-03 17:07:21.756 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-03 17:07:22.991 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 17:07:24.913 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 17:07:24.913 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 17:07:24.927 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 1964.0163ms
+2026-03-03 17:07:24.937 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 23.4646ms
+2026-03-03 17:07:25.021 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 108.089ms
+2026-03-03 17:07:25.145 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 17:07:25.210 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.5732ms
+2026-03-03 17:07:34.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Students - null null
+2026-03-03 17:07:35.089 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-03 17:07:35.095 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-03 17:07:35.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Students - 401 0 null 143.4453ms
+2026-03-03 17:08:04.210 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/Auth/login - application/json 49
+2026-03-03 17:08:04.229 +05:30 [INF] Executing endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 17:08:04.280 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StudentApi.DTO.LoginDto) on controller StudentApi.API.AuthController (StudentApi).
+2026-03-03 17:08:05.491 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-03 17:08:06.991 +05:30 [INF] Executed DbCommand (174ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RoleId], [u].[Username], [r].[Id], [r].[Role_Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Username] = @__model_Username_0
+2026-03-03 17:08:07.292 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-03 17:08:07.309 +05:30 [INF] Executed action StudentApi.API.AuthController.Login (StudentApi) in 3023.2222ms
+2026-03-03 17:08:07.310 +05:30 [INF] Executed endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 17:08:07.323 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/Auth/login - 200 null application/json; charset=utf-8 3113.0306ms
+2026-03-03 17:08:30.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Students - null null
+2026-03-03 17:08:30.172 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.ValidateAndGetOutputSize(ReadOnlySpan`1 strSpan, Int32 offset, Int32 length)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-03-03 17:08:30.214 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-03-03 17:08:30.216 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-03 17:08:30.218 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-03 17:08:30.218 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Students - 401 0 null 98.092ms
+2026-03-03 17:09:11.020 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Students - null null
+2026-03-03 17:09:11.127 +05:30 [INF] Executing endpoint 'StudentApi.API.StudentController.getAction (StudentApi)'
+2026-03-03 17:09:11.132 +05:30 [INF] Route matched with {action = "getAction", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAction() on controller StudentApi.API.StudentController (StudentApi).
+2026-03-03 17:09:11.237 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Created_At], [s].[Created_By], [s].[Email], [s].[First_Name], [s].[Gender], [s].[Has_Passport], [s].[Is_Active], [s].[Last_Modified_At], [s].[Last_Modified_By], [s].[Last_Name], [s].[Mobile_Number], [s].[Passport_Country], [s].[Passport_Expiry_Date], [s].[Passport_Number]
+FROM [Students] AS [s]
+2026-03-03 17:09:11.313 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Student, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 17:09:11.356 +05:30 [INF] Executed action StudentApi.API.StudentController.getAction (StudentApi) in 224.214ms
+2026-03-03 17:09:11.356 +05:30 [INF] Executed endpoint 'StudentApi.API.StudentController.getAction (StudentApi)'
+2026-03-03 17:09:11.357 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Students - 200 null application/json; charset=utf-8 339.1396ms
+2026-03-03 17:09:37.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/University - null null
+2026-03-03 17:09:37.358 +05:30 [INF] Executing endpoint 'StudentApi.API.UniversityController.GetAll (StudentApi)'
+2026-03-03 17:09:37.364 +05:30 [INF] Route matched with {action = "GetAll", controller = "University"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller StudentApi.API.UniversityController (StudentApi).
+2026-03-03 17:09:37.485 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Address], [u].[Address2], [u].[City], [u].[Country], [u].[CreatedBy], [u].[Created_Date], [u].[Email], [u].[Is_Active], [u].[LastModifiedAt], [u].[LastModifiedBy], [u].[Phone_Number], [u].[State], [u].[University_Code], [u].[University_Name], [u].[ZipCode]
+FROM [University] AS [u]
+2026-03-03 17:09:37.527 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models.University, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 17:09:37.538 +05:30 [INF] Executed action StudentApi.API.UniversityController.GetAll (StudentApi) in 173.1221ms
+2026-03-03 17:09:37.538 +05:30 [INF] Executed endpoint 'StudentApi.API.UniversityController.GetAll (StudentApi)'
+2026-03-03 17:09:37.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/University - 200 null application/json; charset=utf-8 197.5563ms
+2026-03-03 17:09:55.778 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Address - null null
+2026-03-03 17:09:55.779 +05:30 [INF] Executing endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 17:09:55.803 +05:30 [INF] Route matched with {action = "GetAll", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller StudentApi.API.AddressController (StudentApi).
+2026-03-03 17:09:55.819 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Address_Id], [a].[Address_Type], [a].[City], [a].[Country], [a].[Created_At], [a].[Created_By], [a].[Is_Active], [a].[LastModified_At], [a].[LastModified_By], [a].[Postal_Code], [a].[State], [a].[Street]
+FROM [Addresses] AS [a]
+2026-03-03 17:09:55.852 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models.Address, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 17:09:55.857 +05:30 [INF] Executed action StudentApi.API.AddressController.GetAll (StudentApi) in 54.0313ms
+2026-03-03 17:09:55.857 +05:30 [INF] Executed endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 17:09:55.858 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Address - 200 null application/json; charset=utf-8 80.0882ms
+2026-03-03 17:13:41.933 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 17:13:42.709 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-03 17:13:42.710 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-03 17:13:42.940 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-03 17:13:42.941 +05:30 [INF] Hosting environment: Development
+2026-03-03 17:13:42.941 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-03 17:13:44.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 17:13:45.359 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 1137.3446ms
+2026-03-03 17:13:45.442 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 17:13:45.442 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 17:13:45.505 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 63.6517ms
+2026-03-03 17:13:45.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 129.0651ms
+2026-03-03 17:13:45.644 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 17:13:45.729 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.7892ms
+2026-03-03 17:13:54.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Address - null null
+2026-03-03 17:13:54.432 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-03 17:13:54.437 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-03 17:13:54.437 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Address - 401 0 null 142.327ms
+2026-03-03 17:15:30.228 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/Auth/register - application/json 127
+2026-03-03 17:15:30.250 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-03 17:15:30.250 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-03 17:15:30.251 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/Auth/register - 401 0 null 23.2401ms
+2026-03-03 17:15:49.176 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 17:15:49.226 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 51.7774ms
+2026-03-03 17:15:49.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 17:15:49.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 17:15:49.285 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.9805ms
+2026-03-03 17:15:49.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.3317ms
+2026-03-03 17:15:49.419 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 17:15:49.451 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.1136ms
+2026-03-03 17:16:27.532 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/Auth/register - application/json 121
+2026-03-03 17:16:27.551 +05:30 [INF] Executing endpoint 'StudentApi.API.AuthController.Register (StudentApi)'
+2026-03-03 17:16:27.599 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(StudentApi.API.RegisterDto) on controller StudentApi.API.AuthController (StudentApi).
+2026-03-03 17:16:28.563 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-03 17:16:29.653 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[@__model_RoleName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Role_Name]
+FROM [Roles] AS [r]
+WHERE [r].[Role_Name] = @__model_RoleName_0
+2026-03-03 17:16:30.035 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Guid), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [PasswordHash], [RoleId], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-03 17:16:30.052 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-03 17:16:30.058 +05:30 [INF] Executed action StudentApi.API.AuthController.Register (StudentApi) in 2454.2104ms
+2026-03-03 17:16:30.059 +05:30 [INF] Executed endpoint 'StudentApi.API.AuthController.Register (StudentApi)'
+2026-03-03 17:16:30.070 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/Auth/register - 200 null text/plain; charset=utf-8 2538.6785ms
+2026-03-03 17:17:25.322 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/Auth/login - application/json 47
+2026-03-03 17:17:25.334 +05:30 [INF] Executing endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 17:17:25.342 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StudentApi.DTO.LoginDto) on controller StudentApi.API.AuthController (StudentApi).
+2026-03-03 17:17:25.473 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RoleId], [u].[Username], [r].[Id], [r].[Role_Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Username] = @__model_Username_0
+2026-03-03 17:17:25.604 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-03 17:17:25.609 +05:30 [INF] Executed action StudentApi.API.AuthController.Login (StudentApi) in 267.2487ms
+2026-03-03 17:17:25.610 +05:30 [INF] Executed endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 17:17:25.610 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/Auth/login - 200 null application/json; charset=utf-8 288.4503ms
+2026-03-03 17:17:43.787 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Address - null null
+2026-03-03 17:17:43.871 +05:30 [INF] Executing endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 17:17:43.877 +05:30 [INF] Route matched with {action = "GetAll", controller = "Address"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller StudentApi.API.AddressController (StudentApi).
+2026-03-03 17:17:43.995 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Address_Id], [a].[Address_Type], [a].[City], [a].[Country], [a].[Created_At], [a].[Created_By], [a].[Is_Active], [a].[LastModified_At], [a].[LastModified_By], [a].[Postal_Code], [a].[State], [a].[Street]
+FROM [Addresses] AS [a]
+2026-03-03 17:17:44.055 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models.Address, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 17:17:44.083 +05:30 [INF] Executed action StudentApi.API.AddressController.GetAll (StudentApi) in 206.2638ms
+2026-03-03 17:17:44.083 +05:30 [INF] Executed endpoint 'StudentApi.API.AddressController.GetAll (StudentApi)'
+2026-03-03 17:17:44.084 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Address - 200 null application/json; charset=utf-8 297.0971ms
+2026-03-03 17:17:59.004 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Branch - null null
+2026-03-03 17:17:59.006 +05:30 [INF] Executing endpoint 'StudentApi.API.BranchController.GetAll (StudentApi)'
+2026-03-03 17:17:59.011 +05:30 [INF] Route matched with {action = "GetAll", controller = "Branch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller StudentApi.API.BranchController (StudentApi).
+2026-03-03 17:17:59.033 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Branch_Code], [b].[Branch_Id], [b].[Branch_Name], [b].[CreatedBy], [b].[Created_Date], [b].[Is_Active], [b].[LastModifiedAt], [b].[LastModifiedBy]
+FROM [Branch] AS [b]
+2026-03-03 17:17:59.059 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models.Branch, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 17:17:59.066 +05:30 [INF] Executed action StudentApi.API.BranchController.GetAll (StudentApi) in 54.5352ms
+2026-03-03 17:17:59.066 +05:30 [INF] Executed endpoint 'StudentApi.API.BranchController.GetAll (StudentApi)'
+2026-03-03 17:17:59.067 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Branch - 200 null application/json; charset=utf-8 63.4489ms
+2026-03-03 17:21:47.332 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-03 17:21:48.035 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-03 17:21:48.036 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-03 17:21:48.393 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-03 17:21:48.394 +05:30 [INF] Hosting environment: Development
+2026-03-03 17:21:48.394 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-03 17:21:49.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-03 17:21:50.154 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 778.7747ms
+2026-03-03 17:21:50.176 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-03 17:21:50.176 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-03 17:21:50.197 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 21.7398ms
+2026-03-03 17:21:50.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.5345ms
+2026-03-03 17:21:50.415 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-03 17:21:50.506 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.1588ms
+2026-03-03 17:22:14.992 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/Auth/login - application/json 47
+2026-03-03 17:22:15.135 +05:30 [INF] Executing endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 17:22:15.181 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StudentApi.DTO.LoginDto) on controller StudentApi.API.AuthController (StudentApi).
+2026-03-03 17:22:16.264 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-03 17:22:17.572 +05:30 [INF] Executed DbCommand (87ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RoleId], [u].[Username], [r].[Id], [r].[Role_Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Username] = @__model_Username_0
+2026-03-03 17:22:17.895 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-03 17:22:17.912 +05:30 [INF] Executed action StudentApi.API.AuthController.Login (StudentApi) in 2725.2674ms
+2026-03-03 17:22:17.913 +05:30 [INF] Executed endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 17:22:17.924 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/Auth/login - 200 null application/json; charset=utf-8 2936.4649ms
+2026-03-03 17:22:41.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Students - null null
+2026-03-03 17:22:41.984 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-03-03 17:22:41.988 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-03-03 17:22:41.989 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Students - 403 0 null 116.5051ms
+2026-03-03 17:23:16.741 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/Auth/login - application/json 49
+2026-03-03 17:23:16.746 +05:30 [INF] Executing endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 17:23:16.747 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StudentApi.DTO.LoginDto) on controller StudentApi.API.AuthController (StudentApi).
+2026-03-03 17:23:16.812 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RoleId], [u].[Username], [r].[Id], [r].[Role_Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Username] = @__model_Username_0
+2026-03-03 17:23:16.903 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-03 17:23:16.904 +05:30 [INF] Executed action StudentApi.API.AuthController.Login (StudentApi) in 157.0312ms
+2026-03-03 17:23:16.904 +05:30 [INF] Executed endpoint 'StudentApi.API.AuthController.Login (StudentApi)'
+2026-03-03 17:23:16.905 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/Auth/login - 200 null application/json; charset=utf-8 164.7655ms
+2026-03-03 17:23:38.534 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/Students - null null
+2026-03-03 17:23:38.575 +05:30 [INF] Executing endpoint 'StudentApi.API.StudentController.getAction (StudentApi)'
+2026-03-03 17:23:38.579 +05:30 [INF] Route matched with {action = "getAction", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult getAction() on controller StudentApi.API.StudentController (StudentApi).
+2026-03-03 17:23:38.714 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Created_At], [s].[Created_By], [s].[Email], [s].[First_Name], [s].[Gender], [s].[Has_Passport], [s].[Is_Active], [s].[Last_Modified_At], [s].[Last_Modified_By], [s].[Last_Name], [s].[Mobile_Number], [s].[Passport_Country], [s].[Passport_Expiry_Date], [s].[Passport_Number]
+FROM [Students] AS [s]
+2026-03-03 17:23:38.774 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Student, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-03 17:23:38.800 +05:30 [INF] Executed action StudentApi.API.StudentController.getAction (StudentApi) in 220.871ms
+2026-03-03 17:23:38.800 +05:30 [INF] Executed endpoint 'StudentApi.API.StudentController.getAction (StudentApi)'
+2026-03-03 17:23:38.800 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/Students - 200 null application/json; charset=utf-8 266.1215ms

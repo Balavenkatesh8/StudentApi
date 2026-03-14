@@ -1,0 +1,307 @@
+2026-03-01 20:33:52.648 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-01 20:33:53.645 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-01 20:33:53.647 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-01 20:33:53.865 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-01 20:33:53.866 +05:30 [INF] Hosting environment: Development
+2026-03-01 20:33:53.866 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-01 20:33:55.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-01 20:33:56.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 533.1791ms
+2026-03-01 20:33:56.286 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-01 20:33:56.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-01 20:33:56.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 41.7476ms
+2026-03-01 20:33:57.191 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 892.1174ms
+2026-03-01 20:33:57.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-01 20:33:57.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.9523ms
+2026-03-01 20:43:22.031 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/api/StudentDocuments - application/json 372
+2026-03-01 20:43:22.303 +05:30 [INF] Executing endpoint 'StudentApi.API.StudentDocumentsController.Create (StudentApi)'
+2026-03-01 20:43:22.375 +05:30 [INF] Route matched with {action = "Create", controller = "StudentDocuments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(StudentDocument) on controller StudentApi.API.StudentDocumentsController (StudentApi).
+2026-03-01 20:43:23.820 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-01 20:43:25.010 +05:30 [ERR] Failed executing DbCommand (94ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [StudentDocuments] ([Id1], [Document_Master_Id], [File_Name], [File_Path], [File_Size], [Is_Verified], [Id], [Uploaded_At], [Uploaded_By])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2026-03-01 20:43:25.106 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Id1'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:fd4bfb7d-74fe-4edf-9fad-04c3792545c0
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Id1'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:fd4bfb7d-74fe-4edf-9fad-04c3792545c0
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-01 20:43:25.318 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-01 20:43:25.326 +05:30 [INF] Executed action StudentApi.API.StudentDocumentsController.Create (StudentApi) in 2944.9541ms
+2026-03-01 20:43:25.327 +05:30 [INF] Executed endpoint 'StudentApi.API.StudentDocumentsController.Create (StudentApi)'
+2026-03-01 20:43:25.342 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/api/StudentDocuments - 500 null text/plain; charset=utf-8 3315.589ms
+2026-03-01 20:44:33.564 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/api/StudentDocuments - application/json 372
+2026-03-01 20:44:33.582 +05:30 [INF] Executing endpoint 'StudentApi.API.StudentDocumentsController.Create (StudentApi)'
+2026-03-01 20:44:33.583 +05:30 [INF] Route matched with {action = "Create", controller = "StudentDocuments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(StudentDocument) on controller StudentApi.API.StudentDocumentsController (StudentApi).
+2026-03-01 20:44:33.693 +05:30 [ERR] Failed executing DbCommand (20ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [StudentDocuments] ([Id1], [Document_Master_Id], [File_Name], [File_Path], [File_Size], [Is_Verified], [Id], [Uploaded_At], [Uploaded_By])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2026-03-01 20:44:33.700 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Id1'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:fd4bfb7d-74fe-4edf-9fad-04c3792545c0
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Id1'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:fd4bfb7d-74fe-4edf-9fad-04c3792545c0
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-01 20:44:33.835 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-01 20:44:33.836 +05:30 [INF] Executed action StudentApi.API.StudentDocumentsController.Create (StudentApi) in 252.7665ms
+2026-03-01 20:44:33.836 +05:30 [INF] Executed endpoint 'StudentApi.API.StudentDocumentsController.Create (StudentApi)'
+2026-03-01 20:44:33.837 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/api/StudentDocuments - 500 null text/plain; charset=utf-8 274.9301ms
+2026-03-01 20:46:30.654 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-01 20:46:31.255 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-01 20:46:31.256 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-01 20:46:31.559 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-01 20:46:31.560 +05:30 [INF] Hosting environment: Development
+2026-03-01 20:46:31.560 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-01 20:46:32.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-01 20:46:32.973 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 473.0168ms
+2026-03-01 20:46:33.003 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-01 20:46:33.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-01 20:46:33.019 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 16.0147ms
+2026-03-01 20:46:33.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.7001ms
+2026-03-01 20:46:33.165 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-01 20:46:33.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.0865ms
+2026-03-01 20:49:44.023 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/api/StudentDocuments - application/json 370
+2026-03-01 20:49:44.228 +05:30 [INF] Executing endpoint 'StudentApi.API.StudentDocumentsController.Create (StudentApi)'
+2026-03-01 20:49:44.289 +05:30 [INF] Route matched with {action = "Create", controller = "StudentDocuments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(StudentDocument) on controller StudentApi.API.StudentDocumentsController (StudentApi).
+2026-03-01 20:49:45.831 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-01 20:49:47.042 +05:30 [ERR] Failed executing DbCommand (139ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [StudentDocuments] ([Id1], [Document_Master_Id], [File_Name], [File_Path], [File_Size], [Is_Verified], [Id], [Uploaded_At], [Uploaded_By])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2026-03-01 20:49:47.118 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Id1'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c971bb1a-0c7d-402e-b4ba-e56eee5d5786
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Id1'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c971bb1a-0c7d-402e-b4ba-e56eee5d5786
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-01 20:49:47.299 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-01 20:49:47.308 +05:30 [INF] Executed action StudentApi.API.StudentDocumentsController.Create (StudentApi) in 3011.2382ms
+2026-03-01 20:49:47.309 +05:30 [INF] Executed endpoint 'StudentApi.API.StudentDocumentsController.Create (StudentApi)'
+2026-03-01 20:49:47.321 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/api/StudentDocuments - 500 null text/plain; charset=utf-8 3298.3998ms
+2026-03-01 20:59:29.474 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-01 20:59:30.037 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-01 20:59:30.038 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-01 20:59:30.353 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-01 20:59:30.354 +05:30 [INF] Hosting environment: Development
+2026-03-01 20:59:30.354 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-01 20:59:31.339 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-01 20:59:31.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 513.0713ms
+2026-03-01 20:59:31.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-01 20:59:31.865 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-01 20:59:31.882 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 17.0189ms
+2026-03-01 20:59:31.988 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 128.9335ms
+2026-03-01 20:59:32.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-01 20:59:32.170 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.9743ms
+2026-03-01 21:01:32.638 +05:30 [INF] User profile is available. Using 'C:\Users\BALA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-01 21:01:33.236 +05:30 [INF] Now listening on: https://localhost:7075
+2026-03-01 21:01:33.237 +05:30 [INF] Now listening on: http://localhost:5225
+2026-03-01 21:01:33.391 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-01 21:01:33.392 +05:30 [INF] Hosting environment: Development
+2026-03-01 21:01:33.392 +05:30 [INF] Content root path: D:\Student\StudentApi\StudentApi
+2026-03-01 21:01:34.895 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/index.html - null null
+2026-03-01 21:01:35.262 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/index.html - 200 null text/html;charset=utf-8 383.5273ms
+2026-03-01 21:01:35.348 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-01 21:01:35.349 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/_vs/browserLink - null null
+2026-03-01 21:01:35.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 16.5243ms
+2026-03-01 21:01:35.478 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/_vs/browserLink - 200 null text/javascript; charset=UTF-8 130.0434ms
+2026-03-01 21:01:35.680 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - null null
+2026-03-01 21:01:35.757 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7075/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.5289ms
+2026-03-01 21:05:19.865 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7075/api/StudentDocuments - application/json 433
+2026-03-01 21:05:20.051 +05:30 [INF] Executing endpoint 'StudentApi.API.StudentDocumentsController.Create (StudentApi)'
+2026-03-01 21:05:20.111 +05:30 [INF] Route matched with {action = "Create", controller = "StudentDocuments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(StudentDocument) on controller StudentApi.API.StudentDocumentsController (StudentApi).
+2026-03-01 21:05:21.502 +05:30 [WRN] No store type was specified for the decimal property 'PercentageOfPassing' on entity type 'StudentEducation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-01 21:05:22.690 +05:30 [ERR] Failed executing DbCommand (147ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Guid), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Guid), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [StudentDocuments] ([Id1], [Created_By], [Document_Master_Id], [File_Name], [File_Path], [File_Size], [Is_Verified], [Last_Modified_By], [Id], [Uploaded_At], [Uploaded_By])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2026-03-01 21:05:22.764 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Id1'.
+Invalid column name 'Created_By'.
+Invalid column name 'Last_Modified_By'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:929c0702-f77b-48b4-bffa-d2c579c53ab1
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Id1'.
+Invalid column name 'Created_By'.
+Invalid column name 'Last_Modified_By'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:929c0702-f77b-48b4-bffa-d2c579c53ab1
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-01 21:05:22.927 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-01 21:05:22.934 +05:30 [INF] Executed action StudentApi.API.StudentDocumentsController.Create (StudentApi) in 2817.6416ms
+2026-03-01 21:05:22.935 +05:30 [INF] Executed endpoint 'StudentApi.API.StudentDocumentsController.Create (StudentApi)'
+2026-03-01 21:05:22.944 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7075/api/StudentDocuments - 500 null text/plain; charset=utf-8 3079.1997ms

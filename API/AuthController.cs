@@ -29,7 +29,7 @@ namespace StudentApi.API
         public async Task<IActionResult> Register(RegisterDto model)
         {
             var role = await _context.Roles
-                .FirstOrDefaultAsync(r => r.RoleName == model.RoleName);
+                .FirstOrDefaultAsync(r => r.RoleName == model.Role);
 
             if (role == null)
                 return BadRequest("Invalid Role");

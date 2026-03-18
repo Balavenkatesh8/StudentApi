@@ -42,7 +42,9 @@ namespace StudentApi.API
                 Username = model.Username,
                 Email = model.Email,
                 Phoneno = model.Phoneno.ToString(),
-                RoleId = role.Id
+                RoleId = role.Id,
+                IsActive = model .IsActive == "true"
+                
             };
 
             user.PasswordHash = passwordHasher.HashPassword(user, model.Password);

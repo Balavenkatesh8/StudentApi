@@ -1173,6 +1173,9 @@
         "additionalProperties": false
       },
       "DocumentMasterlist": {
+        "required": [
+          "document_Name"
+        ],
         "type": "object",
         "properties": {
           "id": {

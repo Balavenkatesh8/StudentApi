@@ -8,12 +8,12 @@ namespace StudentApi.Models
 
         public Guid Id { get; set; }
        
-        public string Document_Name { get; set; }
-        public string Document_Type { get; set; }
+        public required string Document_Name { get; set; }
+        public string? Document_Type { get; set; }
         public bool Is_Mandatory { get; set; }
         public bool Is_Active { get; set; }
         public DateTime Created_At { get; set; }
-        public string Created_By { get; set; }
+        public string? Created_By { get; set; }
     }
 }
 

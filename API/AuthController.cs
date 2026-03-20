@@ -29,7 +29,7 @@ namespace StudentApi.API
         public async Task<IActionResult> Register(RegisterDto model)
         {
             var role = await _context.Roles
-                .FirstOrDefaultAsync(r => r.RoleName == model.RoleName);
+                .FirstOrDefaultAsync(r => r.RoleName == model.Role);
 
             if (role == null)
                 return BadRequest("Invalid Role");
@@ -42,7 +42,9 @@ namespace StudentApi.API
                 Username = model.Username,
                 Email = model.Email,
                 Phoneno = model.Phoneno.ToString(),
-                RoleId = role.Id
+                RoleId = role.Id,
+                IsActive = model .IsActive == "true"
+                
             };
 
             user.PasswordHash = passwordHasher.HashPassword(user, model.Password);
